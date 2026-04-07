@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VocalFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <div class="logo-icon">VF</div>
+          <div>
+            <h1>VocalFlow</h1>
+            <p class="subtitle">Voice to text for Windows</p>
+          </div>
+        </div>
+        <div class="status-badge" id="statusBadge">
+          <div class="status-dot" id="statusDot"></div>
+          <span id="statusText">Ready</span>
+        </div>
+      </div>
+
+      <div class="balance-grid">
+        <div class="balance-card">
+          <p class="balance-label">Deepgram Balance</p>
+          <p class="balance-amount" id="deepgramBalance">Loading...</p>
+        </div>
+        <div class="balance-card">
+          <p class="balance-label">Groq Balance</p>
+          <p class="balance-amount" id="groqBalance">Loading...</p>
+        </div>
+      </div>
+
+      <div class="keys-card">
+        <p class="keys-title">How to use</p>
+        <div class="key-row">
+          <span class="key">F9</span>
+          <span class="key-desc">Start recording</span>
+        </div>
+        <div class="key-row">
+          <span class="key">F10</span>
+          <span class="key-desc">Stop & transcribe</span>
+        </div>
+      </div>
+
+      <div class="result-card" id="resultCard">
+        <p class="keys-title">Last result</p>
+        <p class="raw-text">
+          <span class="result-label">Deepgram:</span>
+          <span id="rawText">—</span>
+        </p>
+        <p class="raw-text">
+          <span class="result-label">Groq improved:</span>
+          <span id="improvedText">—</span>
+        </p>
+      </div>
+    </div>
+    <script src="work.js"></script>
+  </body>
+</html>
