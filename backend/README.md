@@ -58,7 +58,7 @@ vocalflow-windows/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/vocalflow-windows.git
+git clone <repo name>
 cd vocalflow-windows
 ```
 
@@ -70,7 +70,6 @@ npm install
 
 ### 3. Add your API keys
 
-Create a file `config/keys.js` with the following:
 
 ```js
 export const DEEPGRAM_API_KEY = "your_deepgram_api_key_here";
@@ -131,7 +130,6 @@ http://localhost:3000
 
 ## Notes
 
-- `config/keys.js` is excluded from GitHub for security
 - The ZIP file submitted includes `config/keys.js` for testing
 - Do not share your API keys publicly
 - Groq free tier is used — no billing required
